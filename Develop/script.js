@@ -1,4 +1,4 @@
-// Assignment Code
+
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
@@ -96,33 +96,9 @@ function writePassword() {
   passwordText.value = password;
 
 }
-// // Write password to the #password input
-
-
-// // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
 
 
 // GIVEN I need a new, secure password
 // WHEN I click the button to generate a password
 //TODO: write the generatePassword function
-
-
-
-
-
-
-
-
-// WHEN I answer each prompt
-// THEN my input should be validated and at least one character type should be selected
-//TODO: check that we have at least one of the types
-// WHEN all prompts are answered
-// THEN a password is generated that matches the selected criteria
-//TODO: take our holding array and randomize the characters -- adding to a second array
-
-//TODO: take the randomized characters and select the amount that the user has chosen for the password length -- add these to a "return array" -- create a for loop -- the length for this will be the user password length
-// WHEN the password is generated
-// THEN the password is either displayed written to the page
-//TODO:  take our return array and use array methods to convert to a string -- have a var for this and return string
+generateBtn.addEventListener("click", writePassword);
