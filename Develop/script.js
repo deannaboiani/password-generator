@@ -7,13 +7,21 @@ var capAlpha = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
 var num = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
 var symbol = ['!', '@', '#', '$', '%', '^', '&', '*', '+', '-', '_', '='];
 
-var include = []
+
+var include = [];
 
 // WHEN prompted for the length of the password
 // THEN I choose a length of at least 8 characters and no more than 128 characters
 //TODO: ask the user how many characters they want in the password -- use a prompt which will be set to a var -- make sure the infromation is correct -- number -- 8+ or 128-
-var lengthChoice = window.prompt("How long do you want your password to be? Answer MUST be between 8 and 128");
 
+var lengthChoice = window.prompt("How long do you want your password to be? Answer MUST be between 8 and 128");
+if (lengthChoice > 128 || lengthChoice < 8) {
+alert("number is not in the parameters");
+} else {
+console.log(lengthChoice);
+}
+
+  
 // THEN I am presented with a series of prompts for password criteria
 
 // WHEN prompted for password criteria
@@ -54,6 +62,7 @@ if (specialChoice === true) {
 } else {
   console.log("No special characters");
 }
+
 // THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
 
 
